@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+    
+    <script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>AgroSense</h1>
+    </header>
+    <main>
+        <div class="weather-widget">
+            <div class="weather-details">
+                <div class="weather-info">
+                    <div class="weather-label">Temperature:(C)</div>
+                    <div class="weather-data">
+                        <span id="temperature">Getting there...</span>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-label">Humidity:</div>
+                    <div class="weather-data">
+                        <span id="humidity">Getting there...</span>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-label">Soil Moisture:</div>
+                    <div class="weather-data">
+                        <span id="moisture">Getting There...</span>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-label">Nitrogen:(mg/kg)</div>
+                    <div class="weather-data">
+                        <span id="nitrogen">Getting there...</span>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-label">Phosphorus:(mg/kg)</div>
+                    <div class="weather-data">
+                        <span id="phosphorus">Getting there...</span>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-label">Potassium:(mg/kg)</div>
+                    <div class="weather-data">
+                        <span id="potassium">Getting there...</span>
+                    </div>
+                </div>
+                </div>
+                <button id="updateButton" style="background: transparent; border: none; cursor: pointer;">
+                    .
+                </button>
+                </div>
+                
+                <script>
+                // Function to update moisture and reduce nutrient values
+              
+                // Add click event listener to the button
+                const updateButton = document.getElementById("updateButton");
+                updateButton.addEventListener("click", updateMoistureAndNutrients);
+                </script>
+                
+    </main>
+   <script src="firebase.js"></script>
+</body>
+
+</html>
